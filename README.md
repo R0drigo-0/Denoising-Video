@@ -18,12 +18,12 @@ This document describes the analysis of **two videos**, one captured under **goo
       3. This **analysis** allows us to compare the signal quality and noise levels in both videos under different lighting conditions.
 
 ## Results
-### Light Comparasion of the Frame 101 (*No deonoising process*)
+### Light Comparasion of the Frame 101 (*No denoising process*)
 <div align="center">
     <img src="assets/Light_Comparasion_Frame_101.png">
 </div>
 
-### Light Comparasion of the Frame 1 (*Deonoising process*)
+### Light Comparasion of the Frame 1 (*Denoising process*)
 <div align="center">
     <img src="assets/Light_Comparasion_Frame_101.png">
 </div>
