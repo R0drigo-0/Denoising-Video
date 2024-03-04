@@ -22,10 +22,14 @@ for i = 1:min(MAX_FRAMES, min(goodLight.NumFrames, badLight.NumFrames))
     
     grayscaleFrameGood = rgb2gray(frameGood);
     grayscaleFrameBad = rgb2gray(frameBad);
-
+    
     if i <= 100
         lowNoiseFrameGood = wiener2(grayscaleFrameGood);
         lowNoiseFrameBad = wiener2(grayscaleFrameBad);
+        if i == 1
+            imwrite(lowNoiseFrameGood, "frame1GoodLow.bmp");
+            imwrite(lowNoiseFrameBad, "frame1BadLow.bmp");
+        end 
         writeVideo(lowNoiseGoodLight, lowNoiseFrameGood);
         writeVideo(lowNoiseBadLight, lowNoiseFrameBad);
     else
